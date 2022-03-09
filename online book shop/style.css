@@ -1,0 +1,140 @@
+body{
+    cursor: pointer;
+    margin: 0;
+    font-family: sans-serif;
+    position: relative;
+    animation: jump 0.5s;
+    height: 100vh;
+}
+@keyframes jump {
+    0%{
+        transform: translateY(-200%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+header{
+    background-color: #f6f2f2;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 34px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 34px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 34px 8px 0px rgba(34, 60, 80, 0.2);
+}
+#sign_in_bt{
+    padding: 10px 35px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+    border-radius: 10px;
+}
+#sign_in_bt:hover{
+    background-color: #17c917;
+}
+#sign_in_bt:active{
+    background-color: #68ea68;
+}
+section{
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+section *div{
+    display: flex;
+    flex: 1;
+}
+.input_con{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    animation: sign 0.8s ease-in;
+}
+@keyframes sign {
+    0%{
+        transform: translateY(-200%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.input{
+    position: relative;
+    padding: 10px 55px;
+    border: 5px rgba(7, 6, 6, 0.52) solid;
+    border-radius: 5px;
+}
+input:hover{
+    top: -10px;
+    left: 10px;
+    -webkit-box-shadow: 40px 49px 34px -2px rgba(34, 60, 80, 0.21);
+    -moz-box-shadow: 40px 49px 34px -2px rgba(34, 60, 80, 0.21);
+    box-shadow: 40px 49px 34px -2px rgba(34, 60, 80, 0.21);
+    border: 6px rgba(7, 6, 6, 0.52) solid;
+}
+.input:focus{
+    outline: none;
+}
+#link{
+    background-color: blue;
+    padding: 10px 120px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+#link:hover{
+    top: -10px;
+    left: 10px;
+    -webkit-box-shadow: 40px 49px 34px -2px rgba(34, 60, 80, 0.21);
+    -moz-box-shadow: 40px 49px 34px -2px rgba(34, 60, 80, 0.21);
+    box-shadow: 40px 49px 34px -2px rgba(34, 60, 80, 0.21);
+}
+@media screen and (max-width: 1000px){
+   .input_con{
+       width: 100%;
+       background-image: url("group 113.svg");
+       height: 10vh;
+   }
+heaader{
+    padding: 20px;
+}
+    #img{
+        width: 0;
+    }
+    #sign_in_bt{
+        padding: 8px 25px;
+    }
+    #logo{
+        width: 160px;
+    }
+     section{
+         height: 90vh;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         padding: 2%;
+     }
+    .logo{
+        font-size: 8pt;
+    }
+}
+.logo{
+    font-size: 25pt;
+    margin: 0;
+    font-family: Calibri;
+    font-weight: bold;
+}
+.con{
+    display: flex;
+    flex-direction: column;
+}
